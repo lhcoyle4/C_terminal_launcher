@@ -1,0 +1,10 @@
+{
+    "shortcuts": {
+        "<alt>+<ctrl>+u": "wsl",
+        "<alt>+<ctrl>+p": "powershell",
+        "<alt>+<ctrl>+c": "cmd",
+        "<alt>+<ctrl>+7": "pwsh",
+        "<alt>+<ctrl>+/": "pwsh -NoExit -Command agy",
+        "<alt>+<ctrl>+a": "pwsh -Verb RunAs"
+    }
+}
