@@ -79,12 +79,12 @@ void EnsureConfigFileExists() {
         if (outFile.is_open()) {
             outFile << "{\n"
                        "    \"shortcuts\": {\n"
-                       "        \"<alt>+<ctrl>+u\": \"wsl\",\n"
-                       "        \"<alt>+<ctrl>+p\": \"powershell\",\n"
-                       "        \"<alt>+<ctrl>+c\": \"cmd\",\n"
-                       "        \"<alt>+<ctrl>+7\": \"pwsh\",\n"
-                       "        \"<alt>+<ctrl>+/\": \"pwsh -NoExit -Command agy\",\n"
-                       "        \"<alt>+<ctrl>+a\": \"pwsh -Verb RunAs\"\n"
+                       "        \"<ctrl>+<shift>+u\": \"wsl\",\n"
+                       "        \"<ctrl>+<shift>+p\": \"powershell\",\n"
+                       "        \"<ctrl>+<shift>+c\": \"cmd\",\n"
+                       "        \"<ctrl>+<shift>+7\": \"pwsh\",\n"
+                       "        \"<ctrl>+<shift>+/\": \"pwsh -NoExit -Command agy\",\n"
+                       "        \"<ctrl>+<shift>+a\": \"pwsh -Verb RunAs\"\n"
                        "    }\n"
                        "}\n";
         }
@@ -234,7 +234,7 @@ UINT MapKeyStringToVK(const std::string& keyStr) {
     return 0;
 }
 
-// Parse shortcut string like "<alt>+<ctrl>+u" into Win32 modifiers and VK
+// Parse shortcut string like "<ctrl>+<shift>+u" into Win32 modifiers and VK
 bool ParseShortcut(const std::string& shortcutStr, UINT& fsModifiers, UINT& vk) {
     fsModifiers = 0;
     vk = 0;
@@ -648,5 +648,4 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
     }
 
     CloseHandle(hMutex);
-    return (int)msg.wParam;
-}
+    return (int)

@@ -1,10 +1,7 @@
 {
     "shortcuts": {
-        "<alt>+<ctrl>+u": "wsl",
-        "<alt>+<ctrl>+p": "powershell",
-        "<alt>+<ctrl>+c": "cmd",
-        "<alt>+<ctrl>+7": "pwsh",
-        "<alt>+<ctrl>+/": "pwsh -NoExit -Command agy",
-        "<alt>+<ctrl>+a": "pwsh -Verb RunAs"
-    }
-}
+        "<ctrl>+<shift>+u": "wsl",
+        "<ctrl>+<shift>+p": "powershell",
+        "<ctrl>+<shift>+c": "cmd",
+        "<ctrl>+<shift>+7": "C:\\Users\\lhcoy\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShellPreview_8wekyb3d8bbwe\\pwsh.exe",
+     
