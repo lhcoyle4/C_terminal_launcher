@@ -648,4 +648,5 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
     }
 
     CloseHandle(hMutex);
-    return (int)
+    return (int)msg.wParam;
+}

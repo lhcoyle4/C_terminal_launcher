@@ -4,4 +4,7 @@
         "<ctrl>+<shift>+p": "powershell",
         "<ctrl>+<shift>+c": "cmd",
         "<ctrl>+<shift>+7": "C:\\Users\\lhcoy\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShellPreview_8wekyb3d8bbwe\\pwsh.exe",
-     
+        "<ctrl>+<shift>+/": "C:\\Users\\lhcoy\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShellPreview_8wekyb3d8bbwe\\pwsh.exe" -NoExit -Command agy",
+        "<ctrl>+<shift>+a": "C:\\Users\\lhcoy\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShellPreview_8wekyb3d8bbwe\\pwsh.exe" -Verb RunAs"
+    }
+}
